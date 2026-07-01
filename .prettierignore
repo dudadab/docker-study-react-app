@@ -1,0 +1,6 @@
+node_modeuls
+dist
+build
+.drizzle
+package.json
+yarn.lock
