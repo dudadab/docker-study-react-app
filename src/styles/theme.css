@@ -4,7 +4,7 @@
   --font-size: 16px;
   --background: oklch(0.98 0.01 69.8);
   --foreground: oklch(0.2 0.02 69.8);
-  --card: oklch(1 0 0);
+  --card: oklch(0.96 0.03 285);
   --card-foreground: oklch(0.2 0.02 69.8);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.02 69.8);
@@ -44,8 +44,8 @@
 .dark {
   --background: oklch(0.15 0.01 69.8);
   --foreground: oklch(0.95 0.01 69.8);
-  --card: oklch(0.2 0.01 69.8);
-  --card-foreground: oklch(0.95 0.01 69.8);
+  --card: oklch(0.96 0.03 285);
+  --card-foreground: oklch(0.2 0.02 69.8);
   --popover: oklch(0.2 0.01 69.8);
   --popover-foreground: oklch(0.95 0.01 69.8);
   --primary: oklch(0.785 0.104 69.8);
