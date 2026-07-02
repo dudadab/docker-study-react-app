@@ -30,7 +30,7 @@ RUN yarn build
 FROM nginx:alpine AS production
 
 # 빌드 결과 가져오기 (베이스에 설정한 AS '~'와 동일해야 함.)
-COPY --from=builder /app/dist /user/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 # 컨테이너에서 열어줘야 하는 포트
 EXPOSE 80
