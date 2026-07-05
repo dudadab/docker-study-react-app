@@ -5,7 +5,7 @@ import { CalendarIcon, EditIcon, TrashIcon } from './Icons';
 interface NoteCardProps {
   note: Note;
   onEdit: (note: Note) => void;
-  onDelete: (id: number) => void;
+  onDelete: (id: string) => void;
 }
 
 const COLOR_PRESETS = [
