@@ -56,8 +56,9 @@ const COLOR_PRESETS = [
 ];
 
 export const NoteCard: React.FC<NoteCardProps> = ({ note, onEdit, onDelete }) => {
-  // Select color preset based on note ID
-  const preset = COLOR_PRESETS[note.id % COLOR_PRESETS.length];
+  // Select color preset based on note ID hash
+  const hash = note.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const preset = COLOR_PRESETS[hash % COLOR_PRESETS.length];
 
   // Helper to format the creation date
   const formatDate = (dateStr: string) => {
